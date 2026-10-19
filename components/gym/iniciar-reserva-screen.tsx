@@ -159,20 +159,12 @@ export function IniciarReservaScreen({
         )}
       </div>
 
-      <div className="flex gap-3 px-5 py-5">
-        <button
-          type="button"
-          onClick={() => onNavigate("home")}
-          className="flex-1 rounded-xl py-3 text-sm font-bold uppercase tracking-wide text-white transition-transform active:scale-[0.98]"
-          style={{ backgroundColor: COLORS.pumpkin }}
-        >
-          Salir
-        </button>
+      <div className="px-5 py-5">
         <button
           type="button"
           onClick={onConfirm}
           disabled={!fecha || !hora}
-          className="flex-1 rounded-xl py-3 text-sm font-bold uppercase tracking-wide text-white transition-transform active:scale-[0.98] disabled:opacity-50"
+          className="w-full rounded-xl py-3 text-sm font-bold uppercase tracking-wide text-white transition-transform active:scale-[0.98] disabled:opacity-50"
           style={{ backgroundColor: COLORS.norse }}
         >
           Aceptar
